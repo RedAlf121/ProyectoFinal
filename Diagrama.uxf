@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>492</x><y>324</y><w>126</w><h>114</h></coordinates><panel_attributes>/PersonOnWatch/
+--
+# id: String
+# name&amp;LastName: String
+# sex: genre
+# guardSchedule: Calendar
+# numOfGuards: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>306</x><y>132</y><w>126</w><h>114</h></coordinates><panel_attributes>/Period/
+--
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>582</x><y>54</y><w>126</w><h>114</h></coordinates><panel_attributes>Faculty
+--
+- name: String
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>462</y><w>126</w><h>114</h></coordinates><panel_attributes>Stiudent
+--
+- availability: AvailableStudent
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>282</x><y>456</y><w>126</w><h>114</h></coordinates><panel_attributes>Worker
+--
+- availability: AvailableWorker
+- incorporationDate: LocalDate
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>126</x><y>204</y><w>126</w><h>114</h></coordinates><panel_attributes>TeachingPeriod
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>138</x><y>30</y><w>126</w><h>114</h></coordinates><panel_attributes>Vacations
+--</panel_attributes><additional_attributes></additional_attributes></element></diagram>
