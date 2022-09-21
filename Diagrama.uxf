@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>492</x><y>324</y><w>126</w><h>114</h></coordinates><panel_attributes>/PersonOnWatch/
+<diagram program="umletino" version="15.0.0"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>534</x><y>336</y><w>126</w><h>114</h></coordinates><panel_attributes>/PersonOnWatch/
 --
 # id: String
 # name&amp;LastName: String
@@ -6,21 +6,25 @@
 # guardSchedule: Calendar
 # numOfGuards: int
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>306</x><y>132</y><w>126</w><h>114</h></coordinates><panel_attributes>/Period/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>198</x><y>174</y><w>126</w><h>114</h></coordinates><panel_attributes>/Period/
 --
 
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>582</x><y>54</y><w>126</w><h>114</h></coordinates><panel_attributes>Faculty
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>522</x><y>0</y><w>126</w><h>114</h></coordinates><panel_attributes>Faculty
 --
 - name: String
 
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>462</y><w>126</w><h>114</h></coordinates><panel_attributes>Stiudent
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>492</y><w>126</w><h>114</h></coordinates><panel_attributes>Stiudent
 --
 - availability: AvailableStudent
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>282</x><y>456</y><w>126</w><h>114</h></coordinates><panel_attributes>Worker
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>498</y><w>126</w><h>114</h></coordinates><panel_attributes>Worker
 --
 - availability: AvailableWorker
 - incorporationDate: LocalDate
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>126</x><y>204</y><w>126</w><h>114</h></coordinates><panel_attributes>TeachingPeriod
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>138</x><y>30</y><w>126</w><h>114</h></coordinates><panel_attributes>Vacations
---</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>282</y><w>126</w><h>114</h></coordinates><panel_attributes>TeachingPeriod
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>42</y><w>126</w><h>114</h></coordinates><panel_attributes>Vacations
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>444</y><w>90</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>654</x><y>444</y><w>108</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;160;90</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>108</y><w>90</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>252</y><w>90</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>408</x><y>216</y><w>96</w><h>96</h></coordinates><panel_attributes>WatchLog
+--
+
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>318</x><y>234</y><w>102</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>150;30;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>498</x><y>258</y><w>48</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;130</additional_attributes></element><element><id>Relation</id><coordinates><x>486</x><y>108</y><w>48</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;180</additional_attributes></element></diagram>
