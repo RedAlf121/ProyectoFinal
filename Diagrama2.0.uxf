@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>686</x><y>220</y><w>112</w><h>119</h></coordinates><panel_attributes>/Person/
+<diagram program="umletino" version="15.0.0"><zoom_level>4</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>508</x><y>451</y><w>64</w><h>68</h></coordinates><panel_attributes>/Person/
 --
 - id: String
 - name: String
@@ -8,39 +8,47 @@
 - state: State
 --
 /+getState(): State/
-/+setSchedule(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>444</y><w>112</w><h>77</h></coordinates><panel_attributes>Worker
+/+setSchedule(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>584</x><y>563</y><w>64</w><h>44</h></coordinates><panel_attributes>Worker
 --
 - comebackDate: Date
 - vacationWatch: boolean
 --
 +getState():State
-+setSchedule():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>525</x><y>234</y><w>77</w><h>77</h></coordinates><panel_attributes>Student
++setSchedule():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>523</y><w>44</w><h>44</h></coordinates><panel_attributes>Student
 --
 
 
 --
 +getState():State
-+setSchedule():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>539</x><y>80</y><w>126</w><h>91</h></coordinates><panel_attributes>Holidays
++setSchedule():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>391</y><w>72</w><h>52</h></coordinates><panel_attributes>Holidays
 --
 - daysList: ArrayList&lt;Date&gt;
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>332</y><w>210</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>280;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>262</y><w>105</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>129</y><w>161</w><h>77</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-m1pos=-5,7
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>556</x><y>515</y><w>56</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;120;120</additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>487</y><w>44</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>419</y><w>44</w><h>56</h></coordinates><panel_attributes>lt=-
+m1pos=5,7
 m1=	1...1
-m2pos=17,7
-m2=	1...*
-periods</panel_attributes><additional_attributes>10;80;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>276</y><w>105</w><h>182</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m1pos=-15,7
-m1=	1...1
-m2pos=-5,7
-m2=	1...*</panel_attributes><additional_attributes>10;10;120;240</additional_attributes></element><element><id>UMLClass</id><coordinates><x>238</x><y>164</y><w>161</w><h>119</h></coordinates><panel_attributes>Planification
+m2pos=-40,7
+m2=	1...*</panel_attributes><additional_attributes>10;120;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>272</x><y>455</y><w>92</w><h>68</h></coordinates><panel_attributes>Planification
 --
 
 --
 + canMatch(Person,Calendar): boolean
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>143</y><w>147</w><h>133</h></coordinates><panel_attributes>Asignment
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>148</x><y>31</y><w>84</w><h>76</h></coordinates><panel_attributes>Asignment
 --
+-turn: Turn[]
 -schedule: Date
--person: Person
-- done: boolean
+-done: boolean
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>206</y><w>112</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>206</y><w>147</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;190;70</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>196</x><y>103</y><w>84</w><h>388</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>190;950;11;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>336</x><y>259</y><w>104</w><h>96</h></coordinates><panel_attributes>Faculty
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>351</y><w>84</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>190;10;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>428</x><y>351</y><w>120</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;280;250</additional_attributes></element><element><id>Relation</id><coordinates><x>436</x><y>275</y><w>152</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;30;360;10</additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>227</y><w>12</w><h>236</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;570</additional_attributes></element><element><id>UMLClass</id><coordinates><x>576</x><y>203</y><w>84</w><h>76</h></coordinates><panel_attributes>Vacation
+--
+
+--
++canMatch():boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>207</y><w>248</w><h>44</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;600;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>256</x><y>155</y><w>84</w><h>76</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+--
+
+
+--
++canMatch():boolean
++match():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>59</y><w>356</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>870;400;10;10</additional_attributes></element></diagram>
