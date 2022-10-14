@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>847</x><y>0</y><w>112</w><h>168</h></coordinates><panel_attributes>/Person/
+<diagram program="umletino" version="15.0.0"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>855</x><y>0</y><w>154</w><h>168</h></coordinates><panel_attributes>/Person/
 --
 # id: String
 # name: String
@@ -14,7 +14,7 @@
 + setId(String): void
 + setName(String): void
 + setSex(Genre): void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>511</x><y>105</y><w>189</w><h>140</h></coordinates><panel_attributes>Worker
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>519</x><y>105</y><w>189</w><h>140</h></coordinates><panel_attributes>Worker
 --
 - comebackDate: Date
 - listVacationDays: ArrayList&lt;Date&gt; 
@@ -27,21 +27,21 @@
 + doVacationWatch(): boolean
 + setVacationWatch(ArrayList&lt;Date&gt;): void
 + addDay(Date):void
-+ updateDay(Date, Date): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>294</x><y>7</y><w>91</w><h>77</h></coordinates><panel_attributes>Student
++ updateDay(Date, Date): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>302</x><y>7</y><w>91</w><h>77</h></coordinates><panel_attributes>Student
 --
 
 
 --
 +Student(String, String, Genre, State)
 +getState():State
-+setState(State):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>175</y><w>126</w><h>98</h></coordinates><panel_attributes>Holidays
++setState(State):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>8</x><y>175</y><w>126</w><h>98</h></coordinates><panel_attributes>Holidays
 --
 - daysList: ArrayList&lt;Date&gt;
 --
 + Holidays()
 + isHoliday(Date): boolean
 + addDay(Date): void
-+ removeDay(Date): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>49</x><y>336</y><w>161</w><h>119</h></coordinates><panel_attributes>ClassPeriod
++ removeDay(Date): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>29</x><y>336</y><w>189</w><h>119</h></coordinates><panel_attributes>ClassPeriod
 --
 
 --
@@ -50,15 +50,14 @@
 + match(): void
 + organize(): void
 + countAbsent(): int
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>490</x><y>511</y><w>168</w><h>133</h></coordinates><panel_attributes>Asignment
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>498</x><y>511</y><w>168</w><h>133</h></coordinates><panel_attributes>Asignment
 --
 -schedule: Date
--done: boolean
+
 --
 + Asignment(Person, Date, Date, Date)
 + setTurn(Turn): void
-+ setDone(boolean): void
-+ isDone(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>889</x><y>721</y><w>196</w><h>168</h></coordinates><panel_attributes>Faculty
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>897</x><y>721</y><w>196</w><h>168</h></coordinates><panel_attributes>Faculty
 --
 - name: String
 
@@ -72,7 +71,7 @@
 + listOfVacationWatches(): ArrayList&lt;Worker&gt;
 + getListOfWatchDays(Person): ArrayList&lt;Date&gt;
 + addStudent(String, String, Genre, State): void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>441</x><y>308</y><w>161</w><h>133</h></coordinates><panel_attributes>VacationPeriod
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>449</x><y>308</y><w>203</w><h>133</h></coordinates><panel_attributes>VacationPeriod
 --
 
 
@@ -82,7 +81,7 @@
 + VacationPeriod(Date, Date, ArrayList&lt;Person&gt;)
 + canMatch(Person,Calendar): boolean
 + match(): void
-+ organize(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>238</x><y>532</y><w>147</w><h>133</h></coordinates><panel_attributes>/PlanningPeriod/
++ organize(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>190</x><y>532</y><w>203</w><h>133</h></coordinates><panel_attributes>/PlanningPeriod/
 --
 
 
@@ -90,47 +89,50 @@
 +PlanningPeriod(Date, Date, ArrayList&lt;Person&gt;)
 +canMatch():boolean
 +match():void
-+organize(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>427</y><w>175</w><h>21</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>203</x><y>427</y><w>105</w><h>119</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;150;130;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>525</y><w>98</w><h>105</h></coordinates><panel_attributes>Turn
++organize(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>427</y><w>175</w><h>21</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;230;10</additional_attributes></element><element><id>Relation</id><coordinates><x>211</x><y>427</y><w>105</w><h>119</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>130;150;130;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>778</x><y>525</y><w>126</w><h>133</h></coordinates><panel_attributes>Turn
 --
 - incoming: Date
 - outcoming: Date
+
 --
 + Turn(Date, Date, Person)
 + getIncoming(): Date
 + getOutcoming(): Date
 + setIncoming(): Date
-+ setOutcoming(): Date</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>651</x><y>546</y><w>133</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
++ setOutcoming(): Date
++ setDone(boolean): void
++ isDone(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>659</x><y>546</y><w>133</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m1pos=10,3
 m2=*
-m2pos=0,0</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>91</x><y>266</y><w>28</w><h>84</h></coordinates><panel_attributes>lt=-
+m2pos=0,0</panel_attributes><additional_attributes>10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>266</y><w>28</w><h>84</h></coordinates><panel_attributes>lt=-
 m1= *
-m2= 1</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>42</y><w>483</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>670;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>623</x><y>42</y><w>21</w><h>77</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>588</y><w>126</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2= 1</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>386</x><y>42</y><w>483</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>670;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>631</x><y>42</y><w>21</w><h>77</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>386</x><y>588</y><w>126</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m1pos=10,3
 m2=*
-m2pos=0,0</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>77</y><w>154</w><h>273</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2pos=0,0</panel_attributes><additional_attributes>10;10;160;10</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>77</y><w>154</w><h>273</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1= *
 m2= *
-</panel_attributes><additional_attributes>10;370;10;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>532</x><y>238</y><w>28</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;370;10;10;200;10</additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>238</y><w>28</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1= *
-m2= *</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>847</x><y>161</y><w>42</w><h>378</h></coordinates><panel_attributes>lt=-
+m2= *</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>855</x><y>161</y><w>42</w><h>378</h></coordinates><panel_attributes>lt=-
 m1= 0...1
 m1pos=10,0
 m2=*
 m2pos=10,0
 
 
-</panel_attributes><additional_attributes>10;10;10;520</additional_attributes></element><element><id>Relation</id><coordinates><x>378</x><y>658</y><w>525</w><h>196</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;10;10;520</additional_attributes></element><element><id>Relation</id><coordinates><x>386</x><y>658</y><w>525</w><h>196</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1pos=-1,7
 m1=1
 m2pos=10,7
 m2=1...*
-</panel_attributes><additional_attributes>730;250;10;250;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>931</x><y>161</y><w>35</w><h>574</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>730;250;10;250;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>939</x><y>161</y><w>35</w><h>574</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1pos=10,7
 m1=1
 m2pos=10,7
-m2=*</panel_attributes><additional_attributes>10;800;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>203</x><y>175</y><w>322</w><h>175</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=*</panel_attributes><additional_attributes>10;800;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>211</x><y>175</y><w>322</w><h>175</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1= *
 m2= *
 </panel_attributes><additional_attributes>10;230;10;20;440;20</additional_attributes></element></diagram>
