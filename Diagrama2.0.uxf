@@ -1,54 +1,81 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>4</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>508</x><y>451</y><w>64</w><h>68</h></coordinates><panel_attributes>/Person/
+<diagram program="umletino" version="15.0.0"><zoom_level>4</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>525</x><y>364</y><w>64</w><h>88</h></coordinates><panel_attributes>/Person/
 --
-- id: String
-- name: String
-- watchSchedule: Date
-- active: boolean
-- sex: genre
-- state: State
+# id: String
+# name: String
+# sex: Genre
+# state: State
 --
-/+getState(): State/
-/+setSchedule(): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>584</x><y>563</y><w>64</w><h>44</h></coordinates><panel_attributes>Worker
+/+ setState(State): void/
+/+ getState(): State/
++ getId(): String
++ getName(): String
++ getSex(): Genre
++ setId(String): void
++ setName(String): void
++ setSex(Genre): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>557</x><y>588</y><w>108</w><h>68</h></coordinates><panel_attributes>Worker
 --
 - comebackDate: Date
-- vacationWatch: boolean
+- listadoDiasVacaciones: ArrayList&lt;Date&gt; 
 --
-+getState():State
-+setSchedule():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>432</x><y>523</y><w>44</w><h>44</h></coordinates><panel_attributes>Student
++ getState():State
++ setState(State):void
++ getComebackDate: Date
++ setComebackDate(Date): void
++ doVacationWatch(): boolean
++ setVacationWatch(ArrayList&lt;Date&gt;): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>433</x><y>392</y><w>52</w><h>44</h></coordinates><panel_attributes>Student
 --
 
 
 --
 +getState():State
-+setSchedule():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>391</y><w>72</w><h>52</h></coordinates><panel_attributes>Holidays
++setState(State):void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>421</x><y>328</y><w>72</w><h>52</h></coordinates><panel_attributes>Holidays
 --
 - daysList: ArrayList&lt;Date&gt;
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>556</x><y>515</y><w>56</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;120;120</additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>487</y><w>44</w><h>64</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>90;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>419</y><w>44</w><h>56</h></coordinates><panel_attributes>lt=-
+--
++ isHoliday(Date): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>573</x><y>448</y><w>12</w><h>148</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;350</additional_attributes></element><element><id>Relation</id><coordinates><x>481</x><y>400</y><w>52</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>349</x><y>356</y><w>80</w><h>92</h></coordinates><panel_attributes>lt=-
 m1pos=5,7
 m1=	1...1
 m2pos=-40,7
-m2=	1...*</panel_attributes><additional_attributes>10;120;90;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>272</x><y>455</y><w>92</w><h>68</h></coordinates><panel_attributes>Planification
+m2=	1...*</panel_attributes><additional_attributes>10;210;180;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>261</x><y>428</y><w>92</w><h>68</h></coordinates><panel_attributes>Planification
 --
 
 --
 + canMatch(Person,Calendar): boolean
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>148</x><y>31</y><w>84</w><h>76</h></coordinates><panel_attributes>Asignment
++ match(): void
++ organize(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>133</x><y>0</y><w>96</w><h>76</h></coordinates><panel_attributes>Asignment
 --
 -turn: Turn[]
 -schedule: Date
 -done: boolean
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>196</x><y>103</y><w>84</w><h>388</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>190;950;11;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>336</x><y>259</y><w>104</w><h>96</h></coordinates><panel_attributes>Faculty
++ Asignment(Person, Date, Date, Date)
++ setTurn(Turn): void
++ setDone(boolean): void
++ isDone(): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>181</x><y>72</y><w>88</w><h>392</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>200;960;11;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>321</x><y>224</y><w>104</w><h>96</h></coordinates><panel_attributes>Faculty
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>312</x><y>351</y><w>84</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>190;10;10;260</additional_attributes></element><element><id>Relation</id><coordinates><x>428</x><y>351</y><w>120</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;280;250</additional_attributes></element><element><id>Relation</id><coordinates><x>436</x><y>275</y><w>152</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;30;360;10</additional_attributes></element><element><id>Relation</id><coordinates><x>308</x><y>227</y><w>12</w><h>236</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;570</additional_attributes></element><element><id>UMLClass</id><coordinates><x>576</x><y>203</y><w>84</w><h>76</h></coordinates><panel_attributes>Vacation
+
+
+
+
+
 --
++ countAbsent(): int
++ listOfForeignerWorkers(): ArrayList&lt;Person&gt;
++ listOfVacationWatchs()
++ getListOfWatchDays(Person): ArrayList&lt;Date&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>301</x><y>316</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>180;10;10;280</additional_attributes></element><element><id>Relation</id><coordinates><x>421</x><y>264</y><w>144</w><h>108</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;340;250</additional_attributes></element><element><id>Relation</id><coordinates><x>421</x><y>244</y><w>160</w><h>16</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>293</x><y>196</y><w>16</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;20;580</additional_attributes></element><element><id>UMLClass</id><coordinates><x>569</x><y>172</y><w>92</w><h>76</h></coordinates><panel_attributes>Vacation
+--
+
+--
++ canMatch(Person,Calendar): boolean
++ match(): void
++ organize(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>321</x><y>176</y><w>256</w><h>44</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;620;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>241</x><y>124</y><w>84</w><h>76</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+PlanningPeriod
+--
+
 
 --
 +canMatch():boolean
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>207</y><w>248</w><h>44</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;600;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>256</x><y>155</y><w>84</w><h>76</h></coordinates><panel_attributes>&lt;&lt;Interfaz&gt;&gt;
---
-
-
---
-+canMatch():boolean
-+match():void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>228</x><y>59</y><w>356</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>870;400;10;10</additional_attributes></element></diagram>
++match():void
++organize(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>225</x><y>28</y><w>352</w><h>168</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>860;400;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>349</x><y>424</y><w>92</w><h>48</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;100;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>492</y><w>304</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;740;280</additional_attributes></element><element><id>Relation</id><coordinates><x>609</x><y>244</y><w>32</w><h>352</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;860</additional_attributes></element></diagram>
