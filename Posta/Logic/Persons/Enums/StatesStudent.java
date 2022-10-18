@@ -1,8 +1,7 @@
 package Posta.Logic.Persons.Enums;
 
-public enum States {
+public enum StatesStudent{
     ACTIVE,
     LICENCE,
-    OUT,
-    AWARE,
+    DROPPED_OUT
 }

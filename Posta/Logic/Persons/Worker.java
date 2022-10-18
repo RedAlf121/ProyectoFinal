@@ -10,10 +10,11 @@ public class Worker extends Person{
     private Date comebackDate;
 
     private ArrayList<Date> listOfVacationDays;
+    protected States actualState;
 
 
 
-    public Worker(String id, String name, Genre sex, States newState, Date comebackDate) {
+    public Worker(String id, String name, Genre sex, StatesWorker newState, Date comebackDate) {
         super(id, name, sex, newState);
         setComebackDate(comebackDate);
         listOfVacationDays = new ArrayList<>();
@@ -60,7 +61,7 @@ public class Worker extends Person{
         int indexOldDay = listOfVacationDays.indexOf(oldDay);
         listOfVacationDays.set(indexOldDay, newDay);
     }
-    public void setActualState(States newState)
+    public void setActualState(StatesWorker newState)
     {
         //TODO
     }

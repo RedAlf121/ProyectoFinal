@@ -8,8 +8,7 @@ import Posta.Logic.Persons.Enums.States;
 public class Person {
     protected String id;
     protected String name;
-    protected Genre sex;
-    protected States actualState; 
+    protected Genre sex; 
 
     public Person(String id, String name, Genre sex, States newState){
         setName(name);

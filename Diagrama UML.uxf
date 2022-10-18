@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text>Space for diagram notes</help_text>
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>770</x>
+      <y>0</y>
+      <w>130</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>/Person/
+--
+# id: String
+# name: String
+# sex: Genre
+# state: State
+--
++ Person(String, String, Genre, State)
+/+ setState(State): void/
+/+ getState(): State/
++ getId(): String
++ getName(): String
++ getSex(): Genre
++ setId(String): void
++ setName(String): void
++ setSex(Genre): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>75</y>
+      <w>145</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Worker
+--
+- comebackDate: Date
+- listVacationDays: ArrayList&lt;Date&gt; 
+--
++ Worker(String, String, Genre, State, Date)
++ getState():State
++ setState(State):void
++ getComebackDate: Date
++ setComebackDate(Date): void
++ doVacationWatch(): boolean
++ setVacationWatch(ArrayList&lt;Date&gt;): void
++ addDay(Date):void
++ updateDay(Date, Date): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>375</x>
+      <y>5</y>
+      <w>85</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>Student
+--
+
+
+--
++Student(String, String, Genre, State)
++getState():State
++setState(State):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>165</x>
+      <y>125</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Holidays
+--
+- daysList: ArrayList&lt;Date&gt;
+--
++ Holidays()
++ isHoliday(Date): boolean
++ addDay(Date): void
++ removeDay(Date): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>240</y>
+      <w>150</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>ClassPeriod
+--
+
+--
++ ClassPeriod(Date, Date, ArrayList&lt;Person&gt;)
++ canMatch(Person,Date): boolean
++ match(): void
++ organize(): void
++ countAbsent(): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>515</x>
+      <y>365</y>
+      <w>130</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>Asignment
+--
+-day: Date
+
+--
++ Asignment(Person, Date, Date, Date)
++ setTurn(Turn): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>515</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Faculty
+--
+- name: String
+
+
+--
++ Faculty(String)
++ planningClassPeriod(Date, Date): void
++ planningVacationPeriod(Date, Date): void
++ countAbsent(): int
++ listOfForeignerWorkers(): ArrayList&lt;Worker&gt;
++ listOfVacationWatches(): ArrayList&lt;Worker&gt;
++ getListOfWatchDays(Person): ArrayList&lt;Date&gt;
++ addStudent(String, String, Genre, State): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>220</y>
+      <w>160</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>VacationPeriod
+--
+
+
+
+
+--
++ VacationPeriod(Date, Date, ArrayList&lt;Person&gt;)
++ canMatch(Person,Calendar): boolean
++ match(): void
++ organize(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>295</x>
+      <y>380</y>
+      <w>160</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>/PlanningPeriod/
+--
+
+
+--
++PlanningPeriod(Date, Date, ArrayList&lt;Person&gt;)
++canMatch():boolean
++match():void
++organize(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>365</x>
+      <y>305</y>
+      <w>125</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>325</x>
+      <y>305</y>
+      <w>60</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;150.0;100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>190</y>
+      <w>20</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= *
+m2= 1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>455</x>
+      <y>30</y>
+      <w>325</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>630.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>30</y>
+      <w>15</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>420</y>
+      <w>75</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m1pos=10,3
+m2=*
+m2pos=0,0</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>275</x>
+      <y>55</y>
+      <w>110</w>
+      <h>195</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= *
+m2= *
+</panel_attributes>
+    <additional_attributes>10.0;370.0;10.0;10.0;200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>545</x>
+      <y>180</y>
+      <w>20</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= *
+m2= *</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>615</x>
+      <y>120</y>
+      <w>185</w>
+      <h>255</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1= 0...1
+m1pos=10,0
+m2=*
+m2pos=10,0
+
+
+</panel_attributes>
+    <additional_attributes>320.0;10.0;10.0;490.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>470</y>
+      <w>360</w>
+      <h>145</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1pos=-1,7
+m1=1
+m2pos=10,7
+m2=1...*
+</panel_attributes>
+    <additional_attributes>700.0;250.0;10.0;250.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>830</x>
+      <y>120</y>
+      <w>25</w>
+      <h>405</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1pos=10,7
+m1=1
+m2pos=10,7
+m2=*</panel_attributes>
+    <additional_attributes>10.0;790.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>130</y>
+      <w>230</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1= *
+m2= *
+</panel_attributes>
+    <additional_attributes>10.0;220.0;10.0;10.0;440.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>390</y>
+      <w>85</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m1pos=10,3
+m2=*
+m2pos=0,0</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>715</x>
+      <y>375</y>
+      <w>90</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Turn
+--
+-turn:String
+-done:boolean
+--
++ Turn(String)
++ setTurn(String): void
++ setDone(boolean): void
++ isDone(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
