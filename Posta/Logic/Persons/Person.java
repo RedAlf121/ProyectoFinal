@@ -81,13 +81,7 @@ public class Person {
                 if(age < MINIMUM_AGE || age > MAXIMUM_AGE)
                     throw new IllegalArgumentException("Error en la edad");
     
-                else
-                {
-                    //TODO TOCHECK
-                    //Este compararia si ya se guardo previamente
-                    //Los ultimos digitos no tienen porque ser unicos, asi se tienen mas opciones de IDs diferentes
-                    
-                }
+                //La validacion de carne unico lo hara la facultad cada vez que se entre una nueva persona
                 int genre = id.charAt(10)-'0';
                 if((genre%2 == 0 && sex == Genre.FEMALE) || (genre%2 == 1 && sex == Genre.MALE)) 
                     throw new IllegalArgumentException("Error sexo no compatible con el id");                
