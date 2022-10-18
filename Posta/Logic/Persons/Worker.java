@@ -4,18 +4,19 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import Posta.Logic.Persons.Enums.Genre;
-import Posta.Logic.Persons.Enums.States;
+import Posta.Logic.Persons.Enums.StatesWorker;
 
 public class Worker extends Person{
     private Date comebackDate;
 
     private ArrayList<Date> listOfVacationDays;
-    protected States actualState;
+    protected StatesWorker actualState;
 
 
 
     public Worker(String id, String name, Genre sex, StatesWorker newState, Date comebackDate) {
-        super(id, name, sex, newState);
+        super(id, name, sex);
+        setActualState(newState);
         setComebackDate(comebackDate);
         listOfVacationDays = new ArrayList<>();
     }
@@ -25,7 +26,7 @@ public class Worker extends Person{
     }
 
     public void setComebackDate(Date comebackDate) {
-        if(actualState == States.AWARE)
+        if(actualState == StatesWorker.AWARE)
             this.comebackDate = comebackDate;
         else
             this.comebackDate = null;
@@ -66,7 +67,7 @@ public class Worker extends Person{
         //TODO
     }
 
-    public States getActualState()
+    public StatesWorker getActualState()
     {
         //TODO
         return null;

@@ -1,22 +1,23 @@
 package Posta.Logic.Persons;
 
 import Posta.Logic.Persons.Enums.Genre;
-import Posta.Logic.Persons.Enums.States;
+import Posta.Logic.Persons.Enums.StatesStudent;
 
 public class Student extends Person{
 
-    protected States actualState;
+    protected StatesStudent actualState;
 
     public Student(String id, String name, Genre sex, StatesStudent newState) {
-        super(id, name, sex, newState);
+        super(id, name, sex);
+        setActualState(newState);
     }
 
-    public void setActualState(StatesWorker newState)
+    public void setActualState(StatesStudent newState)
     {
         //TODO
     }
 
-    public States getActualState()
+    public StatesStudent getActualState()
     {
         //TODO
         return null;

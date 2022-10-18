@@ -3,17 +3,15 @@ package Posta.Logic.Persons;
 import java.util.Date;
 
 import Posta.Logic.Persons.Enums.Genre;
-import Posta.Logic.Persons.Enums.States;
 
 public class Person {
     protected String id;
     protected String name;
     protected Genre sex; 
 
-    public Person(String id, String name, Genre sex, States newState){
+    public Person(String id, String name, Genre sex){
         setName(name);
-        setSex(sex);
-        setActualState(newState);
+        setSex(sex);        
         setId(id);
     }
 
@@ -106,16 +104,5 @@ public class Person {
     protected void setSex(Genre sex) {
         this.sex = sex;
     }
-
-    public States getActualState() {
-        return actualState;
-    }
-
-    public void setActualState(States actualState) {
-        this.actualState = actualState;
-    }
-
-    
-
 
 }
