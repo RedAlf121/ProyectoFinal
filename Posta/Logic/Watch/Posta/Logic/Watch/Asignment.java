@@ -1,3 +1,8 @@
+package Posta.Logic.Watch;
+import java.util.Date;
+
+import Posta.Logic.Persons.Person;
+
 public class Asignment{
     private Date day;
 
@@ -23,12 +28,13 @@ public class Asignment{
         
         return check;
     }
+    
     public void setTurn(String schedule){
         if(!validateSchedule)
             throw new IllegalArgumentException("Horario no válido");
         
         this.turn = new Turn(schedule);
     }
-
+    
 
 }
