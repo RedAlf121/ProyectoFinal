@@ -33,6 +33,10 @@ public class Worker extends Person{
     }
 
     public void setListOfVacationDays(ArrayList<Date> listOfVacationDays) {
+        
+        if(listOfVacationDays.size() == 0)
+            throw new IllegarArgumentException("Este listado está vacío");
+
         for(Date i : listOfVacationDays)
         {
             if(i == null)
