@@ -12,8 +12,7 @@ public abstract class PlanningPeriod {
     protected Date start;
     protected Date end;
     
-    private ArrayList<Asignment> asignments;
-    private ArrayList<Person> persons;
+    protected ArrayList<Asignment> asignments;
 
     public PlanningPeriod(Date start, Date end, ArrayList<Person> persons)
     {
@@ -53,12 +52,7 @@ public abstract class PlanningPeriod {
     public void setAsignments(ArrayList<Asignment> asignments) {
         this.asignments = asignments;
     }
-    public ArrayList<Person> getPersons() {
-        return persons;
-    }
-    public void setPersons(ArrayList<Person> persons) {
-        this.persons = persons;
-    }
     
+    public abstract void split(ArrayList<Person> persons);
     
 }

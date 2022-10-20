@@ -17,5 +17,11 @@ public class VacationPeriod extends PlanningPeriod{
         // TODO Auto-generated method stub
         
     }
+
+    @Override
+    public void split(ArrayList<Person> persons) {
+        // TODO Auto-generated method stub
+        
+    }
     
 }
