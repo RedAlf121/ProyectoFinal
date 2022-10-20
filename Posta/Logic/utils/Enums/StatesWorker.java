@@ -1,4 +1,4 @@
-package Posta.Logic.Persons.Enums;
+package enums;
 
 public enum StatesWorker {
     ACTIVE,

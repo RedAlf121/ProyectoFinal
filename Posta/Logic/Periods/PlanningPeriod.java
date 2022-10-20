@@ -3,9 +3,8 @@ package Posta.Logic.Periods;
 import java.util.ArrayList;
 import java.util.Date;
 
-import Posta.Logic.Persons.Person;
-
-import Posta.Logic.Watch.Asignment;
+import Posta.Logic.persons.Person;
+import Posta.Logic.watch.Asignment;
 
 public abstract class PlanningPeriod {
 
@@ -16,7 +15,9 @@ public abstract class PlanningPeriod {
 
     public PlanningPeriod(Date start, Date end, ArrayList<Person> persons)
     {
-        
+        setStart(start);
+        setEnd(end);
+        split(persons);
     }
     //Los metodos que dicen match se encargan de asignar una guardia a una persona, revisa que no hay colisiones    
     public boolean canMatch(Person person, Date date)
@@ -29,7 +30,8 @@ public abstract class PlanningPeriod {
 
     }
 
-    public abstract void organize();
+    public abstract void organize(Date start, Date end);
+    public abstract void fullOrganize();
     public Date getStart() {
         return start;
     }

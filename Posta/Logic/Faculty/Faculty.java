@@ -1,3 +1,13 @@
+import java.util.ArrayList;
+import java.util.Date;
+
+import Posta.Logic.Periods.PlanningPeriod;
+import Posta.Logic.persons.Worker;
+import Posta.Logic.persons.Person;
+import enums.Genre;
+import enums.StatesStudent;
+import enums.StatesWorker;
+
 public class Faculty{
     private String name;
     private ArrayList<Person> people;
@@ -18,22 +28,22 @@ public class Faculty{
     }
 
     public int countAbsent(){
-        ;
+        return 0;//TODO
     }
 
-    public ArrayList<Workers> listOfForeignerWorkers(){
-        ;
+    public ArrayList<Worker> listOfForeignerWorkers(){
+        return null;//TODO
     }
 
     public ArrayList<Date> getListOfWatchDays(Person person){
-        ;
+        return null;//TODO
     }
 
     public void addStudent(String id, String name, Genre sex, StatesStudent state){
-        ;
+        //TODO
     }
 
     public void addWorker(String id, String name, Genre sex, StatesWorker state, Date day){
-        ;
+        //TODO
     }
 }

@@ -1,10 +1,10 @@
-package Posta.Logic.Persons;
+package Posta.Logic.persons;
 
 import java.util.ArrayList;
 import java.util.Date;
 
-import Posta.Logic.Persons.Enums.Genre;
-import Posta.Logic.Persons.Enums.StatesWorker;
+import enums.Genre;
+import enums.StatesWorker;
 
 public class Worker extends Person{
     private Date comebackDate;
@@ -35,7 +35,7 @@ public class Worker extends Person{
     public void setListOfVacationDays(ArrayList<Date> listOfVacationDays) {
         
         if(listOfVacationDays.size() == 0)
-            throw new IllegarArgumentException("Este listado está vacío");
+            throw new IllegalArgumentException("Este listado está vacío");
 
         for(Date i : listOfVacationDays)
         {

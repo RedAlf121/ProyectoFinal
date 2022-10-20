@@ -1,8 +1,8 @@
-package Posta.Logic.Persons;
+package Posta.Logic.persons;
 
 import java.util.Date;
 
-import Posta.Logic.Persons.Enums.Genre;
+import enums.Genre;
 
 public class Person {
     protected String id;

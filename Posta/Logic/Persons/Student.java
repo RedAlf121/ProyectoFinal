@@ -1,7 +1,7 @@
-package Posta.Logic.Persons;
+package Posta.Logic.persons;
 
-import Posta.Logic.Persons.Enums.Genre;
-import Posta.Logic.Persons.Enums.StatesStudent;
+import enums.Genre;
+import enums.StatesStudent;
 
 public class Student extends Person{
 
