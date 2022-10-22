@@ -69,7 +69,7 @@ public abstract class PlanningPeriod {
     	SimpleDateFormat df = new SimpleDateFormat( "dd/MM/yy" );  
         df.applyPattern( "EEE" ); 
         String date= df.format( day );
-        if(date.equals("s�b") || date.equals("dom")) { 
+        if(date.equals("sáb") || date.equals("dom")) { 
             check = true;
         } 
     	
