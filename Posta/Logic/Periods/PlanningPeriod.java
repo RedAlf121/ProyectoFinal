@@ -4,12 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-<<<<<<< Updated upstream
+
 import Posta.Logic.persons.Person;
 import Posta.Logic.watch.Asignment;
 
-=======
->>>>>>> Stashed changes
+
 public abstract class PlanningPeriod {
 
     protected Date start;
@@ -35,10 +34,12 @@ public abstract class PlanningPeriod {
     }
 
     public abstract void organize(Date start, Date end);
-<<<<<<< Updated upstream
-    public abstract void fullOrganize();
-=======
->>>>>>> Stashed changes
+
+    public void fullOrganize()
+    {
+        organize(start,end);
+    }
+
     public Date getStart() {
         return start;
     }

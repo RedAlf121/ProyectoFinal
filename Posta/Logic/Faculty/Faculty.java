@@ -1,21 +1,20 @@
-<<<<<<< Updated upstream
+package Posta.Logic.Faculty;
+
 import java.util.ArrayList;
 import java.util.Date;
 
 import Posta.Logic.Periods.PlanningPeriod;
 import Posta.Logic.persons.Worker;
 import Posta.Logic.persons.Person;
-import enums.Genre;
 import enums.StatesStudent;
 import enums.StatesWorker;
-=======
-package classes;
+import enums.Genre;
 
-import java.util.ArrayList;
-import java.util.Date;
 
-import utils.*;
->>>>>>> Stashed changes
+
+
+
+
 
 public class Faculty{
     private String name;
@@ -37,7 +36,6 @@ public class Faculty{
     }
 
     public int countAbsent(){
-<<<<<<< Updated upstream
         return 0;//TODO
     }
 
@@ -47,18 +45,7 @@ public class Faculty{
 
     public ArrayList<Date> getListOfWatchDays(Person person){
         return null;//TODO
-=======
-        return 0;
-    }
-
-    public ArrayList<Worker> listOfForeignerWorkers(){
-        return null;
-    }
-
-    public ArrayList<Date> getListOfWatchDays(Person person){
-        return null;
->>>>>>> Stashed changes
-    }
+    }    
 
     public void addStudent(String id, String name, Genre sex, StatesStudent state){
         //TODO

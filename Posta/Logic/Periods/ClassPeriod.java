@@ -42,7 +42,7 @@ public class ClassPeriod extends PlanningPeriod{
 
     //Splitea la lista completa de personas en trabajadores y estudiantes
 
-    public void split(ArrayList<Person> people){
+    public void split(ArrayList<Person> personList){
         if(personList.size() == 0)
             throw new IllegalArgumentException("Lista vacía, no se puede planificar guardia sin personal");
         
@@ -59,9 +59,7 @@ public class ClassPeriod extends PlanningPeriod{
     }
 
 
-    public boolean canMatch(Person person, Date date){
-        return false;
-    }
+
     
     public void match(Person person, Date date){
     	;
@@ -76,17 +74,17 @@ public class ClassPeriod extends PlanningPeriod{
         int w = 0;
         
         while(start.compareTo(end) < 0){
-        	if(canMatch(students.get(mS), start)){
-        		match(students.get(mS), start);
-        		aux = students.get(mS);
-        		students.remove(mS);
-        		students.add((Student)aux);
+        	if(canMatch(maleStudents.get(mS), start)){
+        		match(maleStudents.get(mS), start);
+        		aux = maleStudents.get(mS);
+        		maleStudents.remove(mS);
+        		maleStudents.add((Student)aux);
         		if(mS > 0)
                     mS--;
                 if(isWeekend(start)){
                     if(!lastPersonWorker){
                         match(workers.get(w), start);
-                        if(w == worker.size())
+                        if(w == workers.size())
                             lastPersonWorker = true;
                         else
                             w++;
